@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Budi Santoso</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #2d2d2d;
+            background: #f5f5f5;
+        }
+
+        .container {
+            width: min(100% - 32px, 820px);
+            margin: 28px auto;
+            background: #ffffff;
+            border: 1px solid #dddddd;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        header {
+            padding: 28px 32px;
+            color: #ffffff;
+            background: #c90000;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        nav {
+            padding: 12px 32px;
+            background: #fde8e8;
+        }
+
+        nav a {
+            margin-right: 22px;
+            color: #c90000;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        nav a:hover,
+        nav a:focus {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 28px 32px 36px;
+        }
+
+        .about {
+            display: flex;
+            align-items: center;
+            gap: 22px;
+            margin-bottom: 26px;
+        }
+
+        .profile-photo {
+            width: 136px;
+            height: 136px;
+            flex: 0 0 136px;
+            border-radius: 10px;
+            object-fit: cover;
+            background: #cad8eb;
+        }
+
+        h2 {
+            margin: 0 0 8px;
+            font-size: 21px;
+        }
+
+        p {
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        section {
+            margin-top: 24px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 12px;
+        }
+
+        th,
+        td {
+            padding: 10px 12px;
+            text-align: left;
+            border: 1px solid #ffffff;
+        }
+
+        th {
+            color: #ffffff;
+            background: #2466b6;
+        }
+
+        td {
+            background: #f2f5f9;
+        }
+
+        form {
+            display: grid;
+            gap: 12px;
+            max-width: 560px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 6px;
+            border: 1px solid #bbbbbb;
+            border-radius: 5px;
+            font: inherit;
+        }
+
+        .field-error {
+            margin-top: -8px;
+            color: #c90000;
+            font-size: 13px;
+        }
+
+        .form-status {
+            color: #286238;
+        }
+
+        textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        button {
+            width: fit-content;
+            padding: 10px 22px;
+            border: 0;
+            border-radius: 5px;
+            color: #ffffff;
+            background: #c90000;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover,
+        button:focus {
+            background: #9f0000;
+        }
+
+        footer {
+            padding: 12px 32px;
+            color: #ffffff;
+            background: #2d2d2d;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                width: min(100% - 20px, 820px);
+                margin: 10px auto;
+            }
+
+            header,
+            nav,
+            main,
+            footer {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            .about {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+            .profile-photo {
+                width: 120px;
+                height: 120px;
+                flex-basis: 120px;
+            }
+
+            table {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Ariel Fadhillah</h1>
+        </header>
+
+        <nav aria-label="Navigasi utama">
+            <a href="#tentang">Tentang</a>
+            <a href="#jadwal">Jadwal</a>
+            <a href="#kontak">Kontak</a>
+            <a href="https://github.com/rillcuii" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </nav>
+
+        <main>
+            <section id="tentang" class="about">
+                <img class="profile-photo"
+                    src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23cad8eb'/%3E%3Ccircle cx='150' cy='112' r='54' fill='%237b91ad'/%3E%3Cpath d='M58 278c8-65 45-96 92-96s84 31 92 96' fill='%237b91ad'/%3E%3C/svg%3E"
+                    alt="Ilustrasi foto profil Budi Santoso">
+                <div>
+                    <h2>Tentang Saya</h2>
+                    <p>Mahasiswa Informatika yang suka membuat website.</p>
+                </div>
+            </section>
+
+            <section id="jadwal">
+                <h2>Jadwal Kuliah</h2>
+                <table id="jadwal-table">
+                    <thead>
+                        <tr>
+                            <th>Hari</th>
+                            <th>Mata Kuliah</th>
+                            <th>Jam</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2">Senin</td>
+                            <td>Pemrograman Web</td>
+                            <td>08.00</td>
+                        </tr>
+                        <tr>
+                            <td>Basis Data</td>
+                            <td>10.00</td>
+                        </tr>
+                        <tr>
+                            <td>Rabu</td>
+                            <td>Jaringan Komputer</td>
+                            <td>13.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button type="button" id="toggle-jadwal" aria-expanded="true" aria-controls="jadwal-table">
+                    Sembunyikan jadwal
+                </button>
+            </section>
+
+            <section id="kontak">
+                <h2>Kontak Saya</h2>
+                <form id="form-kontak" action="#kontak" method="post" novalidate>
+                    <label for="nama">Nama</label>
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan nama" aria-describedby="nama-error"
+                        required>
+                    <span class="field-error" id="nama-error" aria-live="polite"></span>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="nama@email.com"
+                        aria-describedby="email-error" required>
+                    <span class="field-error" id="email-error" aria-live="polite"></span>
+
+                    <label for="pesan">Pesan</label>
+                    <textarea id="pesan" name="pesan" placeholder="Tulis pesanmu" aria-describedby="pesan-error"
+                        required></textarea>
+                    <span class="field-error" id="pesan-error" aria-live="polite"></span>
+
+                    <button type="submit">Kirim</button>
+                    <span class="form-status" id="form-status" role="status"></span>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; Ariel 2026 </p>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        const scheduleButton = document.getElementById('toggle-jadwal');
+
+        scheduleButton.addEventListener('click', function () {
+            const isExpanded = scheduleButton.getAttribute('aria-expanded') === 'true';
+
+            scheduleButton.setAttribute('aria-expanded', String(!isExpanded));
+            scheduleButton.textContent = isExpanded ? 'Tampilkan jadwal' : 'Sembunyikan jadwal';
+            $('#jadwal table').stop(true, true).slideToggle(450);
+        });
+
+        const contactForm = document.getElementById('form-kontak');
+        const formStatus = document.getElementById('form-status');
+
+        function showFieldError(input, message) {
+            const error = document.getElementById(input.id + '-error');
+            error.textContent = message;
+            input.setAttribute('aria-invalid', String(Boolean(message)));
+        }
+
+        contactForm.addEventListener('input', function (event) {
+            if (event.target.matches('#nama, #email, #pesan')) {
+                showFieldError(event.target, '');
+                formStatus.textContent = '';
+            }
+        });
+
+        contactForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const nameInput = document.getElementById('nama');
+            const emailInput = document.getElementById('email');
+            const messageInput = document.getElementById('pesan');
+            const name = nameInput.value.trim();
+            const email = emailInput.value.trim();
+            const message = messageInput.value.trim();
+            let firstInvalidInput = null;
+
+            showFieldError(nameInput, name ? '' : 'Nama wajib diisi.');
+            showFieldError(emailInput, !email
+                ? 'Email wajib diisi.'
+                : emailInput.validity.typeMismatch ? 'Masukkan alamat email yang valid.' : '');
+            showFieldError(messageInput, message ? '' : 'Pesan wajib diisi.');
+
+            for (const input of [nameInput, emailInput, messageInput]) {
+                if (input.getAttribute('aria-invalid') === 'true') {
+                    firstInvalidInput = input;
+                    break;
+                }
+            }
+
+            if (firstInvalidInput) {
+                formStatus.textContent = '';
+                firstInvalidInput.focus();
+                return;
+            }
+
+            formStatus.textContent = 'Pesan berhasil divalidasi. Terima kasih!';
+        });
+    </script>
+</body>
+
+</html>
