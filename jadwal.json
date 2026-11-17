@@ -1,0 +1,17 @@
+[
+    {
+        "hari": "Senin",
+        "mataKuliah": "Pemrograman Web",
+        "jam": "08.00"
+    },
+    {
+        "hari": "Senin",
+        "mataKuliah": "Basis Data",
+        "jam": "10.00"
+    },
+    {
+        "hari": "Rabu",
+        "mataKuliah": "Jaringan Komputer",
+        "jam": "13.00"
+    }
+]
