@@ -135,7 +135,7 @@
         const scheduleBody = document.getElementById('jadwal-body');
         const scheduleStatus = document.getElementById('jadwal-status');
 
-        fetch('jadwal.json')
+        fetch('http://localhost:3000/api/jadwal')
             .then((response) => {
                 if (!response.ok) {
                     throw new Error('Data jadwal gagal dimuat.');
